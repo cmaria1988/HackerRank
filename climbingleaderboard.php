@@ -20,9 +20,4 @@ function climbingLeaderboard($ranked, $player) {
     }
     return $result;
 }
-
-$ranked = [100, 100, 50, 40, 40, 20, 10];
-$player = [5,5, 25, 50, 120];
-$test2 = climbingLeaderboard($ranked, $player);
-print_r($test2);
 ?>

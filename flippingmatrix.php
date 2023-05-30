@@ -16,8 +16,4 @@ function flippingMatrix($matrix) {
     $result = array_sum($temparray);
     print_r($result);
 }
-$matrix=[[112,42,83,119],[56,125,56,49],[15,78,101,43],[62,98,114,108]];
-//$matrix = [[1,2],[3,4]];
-flippingMatrix($matrix);
-
 ?>

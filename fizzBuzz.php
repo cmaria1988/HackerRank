@@ -21,7 +21,6 @@ function fizzBuzz($n) {
             $result = $i;
         }
         print_r($result."\r\n");
-        //echo("<br>");
     }
 
 }

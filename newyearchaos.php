@@ -36,9 +36,4 @@ function minimumBribes($q) {
     $result = $chaotic ? "Too chaotic" : $bribes;
     echo($result);
 }
-
-$q = [1, 2, 5, 3, 7, 8, 6, 4];
-//$q = [1,5,2,3,4];
-$test2 = minimumBribes($q);
-print_r($test2);
 ?>

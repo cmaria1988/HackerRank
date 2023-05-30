@@ -20,8 +20,4 @@ function icecreamParlor($m, $arr) {
     $newarr = [$first+1, $second+1];
     return $newarr;
 }
-$m = 9;
-$arr = [1, 3, 4, 6, 7, 9];
-$test2 = icecreamParlor($m, $arr);
-print_r($test2);
 ?>

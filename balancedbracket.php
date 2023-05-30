@@ -27,7 +27,6 @@ function isBalanced($s){
         }
     }
 
-//    print_r($temp);
     $result = "NO";
     if($temp == ""){
         $result = "YES";
@@ -46,12 +45,4 @@ function check($first, $second){
         return FALSE;
     }
 }
-//$s="()()()()()()()()";
-//$s = "{[()]}";
-//$s = "{[(])}";
-//$s = "{{[[(())]]}}";
-//$s = "{(([])[])[]}";
-
-$test2 = isBalanced($s);
-print_r($test2);
 ?>
