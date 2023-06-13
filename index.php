@@ -1,26 +1,34 @@
 <?php
-
-function truckTour($petrolpumps) {
-    $petrol = 0;
-    $distance = 0;
-    $cirle = $petrolpumps;
+function minimumSwaps($arr){ 
+    $counter = 0;
+    $length = count($arr);
     $i = 0;
-    for($i=0;$i<count($cirle); $i++){
-        if($cirle[$i][0]<$circle[$i][1]){
-            $arr=array();
-            $arr[] = [$circle[$i][0], $circle[$i][1]];
-            
+    while($i<$length){
+        if($arr[$i] != $i+1){
+            $key = array_search($i+1, $arr);
+            $arr[$key] = $arr[$i];
+            $arr[$i]= $i+1;
+            $counter ++;
+            //break;
+            /*
+             for($j=$i+1; $j<$length; $j++){
+                if($arr[$j] == $i+1){
+                    $arr[$j] = $arr[$i];
+                    $arr[$i] = $i+1;
+                    $counter ++;
+                    break;
+                }
+            }
+            */
         }
+        $i++;
     }
-    
+    print_r($arr);
+    return $counter;
 }
 
-function check($petrol, $distance){
-
-}
-
-$petrolpumps = [[1,5],[10,3],[3,4]];
-
-$test = truckTour($petrolpumps);
+$arr = [4,3,1,2];
+$test = minimumSwaps($arr);
 print_r($test);
+
 ?>
